@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive loginpage</title>
+    <style>
+
+         @media (max-width: 600px) {
+  .left-image {
+    display: none;
+  }
+}
+
+@media (max-width:600px){
+      .one{
+        
+        width: 50%;
+      }
+}
+    
+   
+
+  input[type="submit"] {
+      background-color: tomato;
+      color: rgb(255, 255, 255);
+      border: none;
+      width: 30px;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      transition: ease, transform 0.2s ease;
+    }
+    
+
+.one {
+    overflow: hidden; /* ensures form wraps properly around floated image */
+    position: fixed;
+    float: right;
+  right: 0px;
+  width: 300px;
+               
+      bottom: 0px;
+      top: 100px;
+      right:50px;
+      width:200px;
+        height: 100%;
+         font-size: 20px;
+         font-family: sans-serif;
+       
+       
+}
+
+    
+    .left-image {
+      position: fixed;
+      float: left;
+      
+}
+</style>
+</head>
+<body>
+<div class="one">
+<h2 style="color:tomato;"font-size="25px";>Login Form</h2>
+
+<form style="font-size: large;" font-style="bold";>
+	<label>Email:</label> <br>
+	<input type="email:" name="Email"><br>
+	<label>Password:</label><br>
+	<input type="password:" name="password"><br>
+     <input type="checkbox" name="Remember me" value="Remember me">Remember me<br>
+    <input type="submit" value="Login">
+</form>
+
+</div>
+
+<div class="left-image">
+
+    <img src="https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="left-image" class="responsive-image" style="width:600px;height:100%;position:fixed;">
+
+    </div>
+
+
+</body>
+</html>
