@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive login page</title>
+    <style>
+
+         @media (max-width: 700px){
+  .left{
+    display: none;
+  }
+}
+
+@media (max-width:600px){
+      .login{
+        
+        width: 100%;
+        display: flex;
+
+      }
+}
+    .container{
+        flex: 1;
+
+    }
+
+         input[type="submit"] {
+      background-color: tomato;
+      color: rgb(255, 255, 255);
+      border: none;
+      width: 80px;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      width: 100%;
+  }
+  
+  .left{
+    width: 600px;
+  height: 700px;
+  background: linear-gradient(to bottom, rgb(150, 133, 175), rgb(226, 186, 118));
+  flex: 1;
+  background-size: cover;
+  width: 50%;
+  float: left;
+
+}
+  .login{
+    margin: 20px;
+    font-size: large;
+    align-content: center;
+    margin-left: 10px;
+    padding: 20px;
+
+}
+</style>
+</head>
+<body>
+    <div class="container">
+    <div class="left"></div>
+<div class="login"
+margin-top="200px">
+      <h2 style="color:tomato;"font-size="25px";>Login Form</h2>
+
+         <form style="font-size:medium;" font-style="bold";>
+	     <label>Email:</label> <br>
+	     <input type="email:" name="Email"  style="width: 500px"/><br><br>
+	     <label>Password:</label><br>
+	     <input type="password:" name="password"  style="width: 500px"/><br><br>
+         <input type="checkbox" name="Remember me" value="Remember me"/> Remember me<br><br>
+        <input type="submit" value="Login"  style="width: 500px;"/>
+      </form>
+
+</div>
+</div>
+
+</body>
+</html>
