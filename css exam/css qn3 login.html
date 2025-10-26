@@ -35,11 +35,14 @@
       font-weight: 600;
       width: 100%;
   }
+  h2{
+    
+  }
   
   .left{
     width: 600px;
   height: 700px;
-  background: linear-gradient(to bottom, rgb(150, 133, 175), rgb(226, 186, 118));
+  background: linear-gradient(to bottom, rgb(170, 151, 197), rgb(230, 193, 130));
   flex: 1;
   background-size: cover;
   width: 50%;
@@ -47,10 +50,14 @@
 
 }
   .login{
+    display: grid;
+  align-items: center;
     margin: 20px;
-    font-size: large;
+    flex-wrap: wrap;
+    font-size: 20px;
     align-content: center;
-    margin-left: 10px;
+    margin-right: auto;
+    margin-left: 5px;
     padding: 20px;
 
 }
@@ -59,17 +66,18 @@
 <body>
     <div class="container">
     <div class="left"></div>
-<div class="login"
-margin-top="200px">
-      <h2 style="color:tomato;"font-size="25px";>Login Form</h2>
+<div class="login">
+      <h2 style="color:tomato";
+      font="serif";> Login Form </h2><br><br>
 
-         <form style="font-size:medium;" font-style="bold";>
+         <form style="font-size:medium;"
+          font-style="bold";>
 	     <label>Email:</label> <br>
-	     <input type="email:" name="Email"  style="width: 500px"/><br><br>
+	     <input type="email:" name="Email"  style="width: 600px" style="height:40px"><br><br>
 	     <label>Password:</label><br>
-	     <input type="password:" name="password"  style="width: 500px"/><br><br>
+	     <input type="password:" name="password"  style="width: 600px"/><br><br>
          <input type="checkbox" name="Remember me" value="Remember me"/> Remember me<br><br>
-        <input type="submit" value="Login"  style="width: 500px;"/>
+        <input type="submit" value="Login"  style="width: 600px;"/>
       </form>
 
 </div>
